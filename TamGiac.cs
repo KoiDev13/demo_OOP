@@ -6,30 +6,42 @@ using System.Threading.Tasks;
 
 namespace demo_OOP
 {
-    internal class TamGiac
+    class TamGiac
     {
-        public Diem A;
-        public Diem B;
-        public Diem C;
+        public Diem A { get; set; }
+        public Diem B { get; set; }
+        public Diem C { get; set; }
 
-        public void NhapTamGiac(string GhiChu)
+
+        public TamGiac()
         {
-            this.A = new Diem();
-            this.B = new Diem();
-            this.C = new Diem();
-            this.A.NhapDiem(GhiChu);
-            this.B.NhapDiem(GhiChu);
-            this.C.NhapDiem(GhiChu);
-        }  
-
-        public double TinhChuVi()
+            this.A = new Diem(0, 0);
+            this.B = new Diem(1, 0);
+            this.C = new Diem(0, 1);
+        }
+        public TamGiac(Diem a, Diem b, Diem c)
         {
-            double ab, bc, ca;
-            ab = this.A.TinhKhoangCach(B);
-            bc = this.B.TinhKhoangCach(C);
-            ca = this.C.TinhKhoangCach(A);
+            if (KiemTraTamGiac(a, b, c))
+            {
+                this.A = a;
+                this.B = b;
+                this.C = c;
+            }
+            else
+            {
+                this.A = new Diem(0, 0);
+                this.B = new Diem(1, 0);
+                this.C = new Diem(0, 1);
+            }
+        }
 
-            return ab + bc + ca;
+        public bool KiemTraTamGiac(Diem p1, Diem p2, Diem p3)
+        {
+            double a, b, c;
+            a = p1.TinhKhoangCach(p2);
+            b = p2.TinhKhoangCach(p3);
+            c = p3.TinhKhoangCach(p1);
+            return a + b > c && b + c > a && c + a > b;
         }
     }
 }

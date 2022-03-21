@@ -10,17 +10,18 @@ namespace demo_OOP
     {
         static void Main(string[] args)
         {
-
-            PhanSo t;
+            
+            
+            /*
+            PhanSo t, p1, p2;
             t= new PhanSo();
-            t.TUSO = 1;
-            int tt = t.TUSO;
-            t.MAUSO = 2;
-            string chuoi = t.XuatPhanSo();
+            p1= new PhanSo(5);
+            p2= new PhanSo(2,3);
+            string chuoi = p2.XuatPhanSo();
             Console.WriteLine(chuoi);
+            */
 
-            
-            
+
             // Class Tam giac Program
 
             /*

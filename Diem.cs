@@ -12,6 +12,18 @@ namespace demo_OOP
         public int X { get; set; }
         public int Y { get; set; }
 
+        public Diem()
+        {
+            this.X = 0;
+            this.Y = 0;
+        }
+
+        public Diem(int x, int  y)
+        {
+            this.X = x;
+            this.Y = y;
+        }
+
         public void NhapDiem(string GhiChu)
         {
             Console.WriteLine(GhiChu);

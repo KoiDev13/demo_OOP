@@ -11,6 +11,30 @@ namespace demo_OOP
         private int TuSo;
         private int MauSo;
 
+        public PhanSo()
+        {
+            this.TuSo = 0;
+            this.MauSo = 1;
+        }
+
+        public PhanSo(int t)
+        {
+            this.TuSo = t;
+            this.MauSo = 1;
+        }
+
+        public PhanSo(int t, int m)
+        {
+            this.TuSo = t;
+            if (m != 0)
+            {
+                this.MauSo = m;
+            }
+            else
+            {
+                this.MauSo = 1; 
+            }
+        }
         public void Nhap(string GhiChu)
         {
             Console.WriteLine(GhiChu);

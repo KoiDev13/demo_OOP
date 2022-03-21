@@ -47,7 +47,6 @@
     <Compile Include="PhanSo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TamGiac.cs" />
     <Compile Include="XL_PhanSo.cs" />
   </ItemGroup>
   <ItemGroup>

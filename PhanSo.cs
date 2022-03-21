@@ -50,7 +50,7 @@ namespace demo_OOP
             set
             {
                 if (value != 0)
-                {
+        {
                     this.MauSo = value;
                 }
             }

@@ -43,5 +43,7 @@ namespace demo_OOP
             c = p3.TinhKhoangCach(p1);
             return a + b > c && b + c > a && c + a > b;
         }
+
+        
     }
 }

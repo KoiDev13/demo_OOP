@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Diem.cs" />
+    <Compile Include="NhanVienSanXuat.cs" />
+    <Compile Include="NhanVienVanPhong.cs" />
     <Compile Include="PhanSo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
